@@ -6,13 +6,13 @@
 
 pragma solidity 0.4.23;
 
-import "openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 
 /**
   * @title TestToken
   * @author Project Wyvern Developers
   */
-contract TestToken is StandardToken {
+contract TestToken is ERC20 {
 
     uint constant public decimals     = 18;
     string constant public name       = "Test Token";
@@ -24,8 +24,8 @@ contract TestToken is StandardToken {
       * @dev Initialize the test token
       */
     constructor () public {
-        balances[msg.sender] = MINT_AMOUNT;
-        totalSupply_ = MINT_AMOUNT;
+        // balances[msg.sender] = MINT_AMOUNT;
+        // totalSupply_ = MINT_AMOUNT;
     }
 
 }

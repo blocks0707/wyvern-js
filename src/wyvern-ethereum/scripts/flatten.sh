@@ -4,7 +4,7 @@ rm -rf temp
 mkdir -p temp
 
 cd contracts
-find . -type f -name "*.sol" -exec sed -i 's/pragma solidity 0.4.23/pragma solidity ^0.4.23/g' {} +
+find . -type f -name "*.sol" -exec sed -i 's/pragma solidity 0.5.16/pragma solidity ^0.5.16/g' {} +
 cd ..
 
 alias flatten="solidity_flattener --solc-paths openzeppelin-solidity=$(pwd)/node_modules/openzeppelin-solidity"
@@ -18,5 +18,5 @@ flatten contracts/WyvernExchange.sol --output temp/WyvernExchangeFlattened.sol
 flatten contracts/WyvernProxyRegistry.sol --output temp/WyvernProxyRegistryFlattened.sol
 
 cd contracts
-find . -type f -name "*.sol" -exec sed -i 's/pragma solidity ^0.4.23/pragma solidity 0.4.23/g' {} +
+find . -type f -name "*.sol" -exec sed -i 's/pragma solidity ^0.5.16/pragma solidity 0.5.16/g' {} +
 cd ..

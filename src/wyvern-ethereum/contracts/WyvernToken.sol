@@ -6,7 +6,7 @@
 
 pragma solidity 0.4.23;
 
-import "openzeppelin-solidity/contracts/token/ERC20/BurnableToken.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 
 import "./token/UTXORedeemableToken.sol";
 import "./token/DelayedReleaseToken.sol";
@@ -15,7 +15,7 @@ import "./token/DelayedReleaseToken.sol";
   * @title WyvernToken
   * @author Project Wyvern Developers
   */
-contract WyvernToken is DelayedReleaseToken, UTXORedeemableToken, BurnableToken {
+contract WyvernToken is DelayedReleaseToken, UTXORedeemableToken {
 
     uint constant public decimals     = 18;
     string constant public name       = "Project Wyvern Token";
@@ -45,7 +45,7 @@ contract WyvernToken is DelayedReleaseToken, UTXORedeemableToken, BurnableToken 
 
         /* Configure UTXORedeemableToken. */
         rootUTXOMerkleTreeHash = merkleRoot;
-        totalSupply_ = MINT_AMOUNT;
+        // totalSupply_ = MINT_AMOUNT;
         maximumRedeemable = utxoTokens;
         multiplier = SATS_TO_TOKENS;
     }

@@ -9,6 +9,8 @@ export const signatureUtils = {
         const dataBuff = ethUtil.toBuffer(data);
         // const msgHashBuff = ethUtil.hashPersonalMessage(dataBuff);
         const msgHashBuff = dataBuff;
+        console.log("v, r, s: ", signature.v, signature.r, signature.s);
+        console.log("data length: ", dataBuff.length);
         try {
             const pubKey = ethUtil.ecrecover(
                 msgHashBuff,
@@ -17,8 +19,11 @@ export const signatureUtils = {
                 ethUtil.toBuffer(signature.s),
             );
             const retrievedAddress = ethUtil.bufferToHex(ethUtil.pubToAddress(pubKey));
+            console.log("retrievedAddress: ", retrievedAddress);
+            console.log("signerAddress: ", signerAddress);
             return retrievedAddress === signerAddress;
         } catch (err) {
+            console.error("exception occured while isValidSignature: ", err)
             return false;
         }
     },

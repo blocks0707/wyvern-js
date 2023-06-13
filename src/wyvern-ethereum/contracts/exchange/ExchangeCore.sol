@@ -301,6 +301,14 @@ contract ExchangeCore is ReentrancyGuarded, Ownable {
         return keccak256("\x19Ethereum Signed Message:\n32", hashOrder(order));
     }
 
+    function hashToKlaytnSign(Order memory order)
+        internal
+        pure
+        returns (bytes32)
+    {
+        return keccak256("\x19Klaytn Signed Message:\n32", hashOrder(order));
+    }
+
     /**
      * @dev Assert an order is valid and return its hash
      * @param order Order to validate
@@ -311,8 +319,10 @@ contract ExchangeCore is ReentrancyGuarded, Ownable {
         view
         returns (bytes32)
     {
+
         bytes32 hash = hashToSign(order);
-        require(validateOrder(hash, order, sig));
+        bytes32 hashKlaytn = hashToKlaytnSign(order);
+        require(validateOrder(hash, hashKlaytn, order, sig));
         return hash;
     }
 
@@ -349,7 +359,7 @@ contract ExchangeCore is ReentrancyGuarded, Ownable {
      * @param order Order to validate
      * @param sig ECDSA signature
      */
-    function validateOrder(bytes32 hash, Order memory order, Sig memory sig) 
+    function validateOrder(bytes32 hash, bytes32 hashKlaytn, Order memory order, Sig memory sig) 
         internal
         view
         returns (bool)
@@ -374,6 +384,10 @@ contract ExchangeCore is ReentrancyGuarded, Ownable {
 
         /* or (b) ECDSA-signed by maker. */
         if (ecrecover(hash, sig.v, sig.r, sig.s) == order.maker) {
+            return true;
+        }
+        /* or (b) ECDSA-signed by klaytn maker. */
+        if (ecrecover(hashKlaytn, sig.v, sig.r, sig.s) == order.maker) {
             return true;
         }
 

@@ -18,7 +18,7 @@
 
 pragma solidity 0.4.23;
 
-import "openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
+import "openzeppelin-solidity/contracts/token/ERC20/ERC20.sol";
 import "openzeppelin-solidity/contracts/math/SafeMath.sol";
 import "openzeppelin-solidity/contracts/MerkleProof.sol";
 
@@ -26,7 +26,7 @@ import "openzeppelin-solidity/contracts/MerkleProof.sol";
   * @title UTXORedeemableToken
   * @author Project Wyvern Developers
   */
-contract UTXORedeemableToken is StandardToken {
+contract UTXORedeemableToken is ERC20 {
 
     /* Root hash of the UTXO Merkle tree, must be initialized by token constructor. */
     bytes32 public rootUTXOMerkleTreeHash;
@@ -129,7 +129,8 @@ contract UTXORedeemableToken is StandardToken {
      * @return Whether or not the proof is valid
      */
     function verifyProof(bytes32[] proof, bytes32 merkleLeafHash) public view returns (bool) {
-        return MerkleProof.verifyProof(proof, rootUTXOMerkleTreeHash, merkleLeafHash);
+        // return MerkleProof.verifyProof(proof, rootUTXOMerkleTreeHash, merkleLeafHash);
+        return false;
     }
 
     /**
@@ -200,7 +201,7 @@ contract UTXORedeemableToken is StandardToken {
         require(totalRedeemed <= maximumRedeemable);
 
         /* Credit the redeemer. */ 
-        balances[msg.sender] = SafeMath.add(balances[msg.sender], tokensRedeemed);
+        // balances[msg.sender] = SafeMath.add(balances[msg.sender], tokensRedeemed);
 
         /* Mark the transfer event. */
         emit Transfer(address(0), msg.sender, tokensRedeemed);

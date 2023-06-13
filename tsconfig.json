@@ -6,17 +6,18 @@
       "./node_modules/types-ethereumjs-util/index.d.ts"
     ],
     "compilerOptions": {
+        "strict": true,
         "outDir": "lib",
         "noImplicitThis": false,
         "module": "commonjs",
-        "target": "es5",
+        "target": "es6",
         "types": ["node"],
         "lib": ["es2017", "dom"],
         "sourceMap": true,
         "declaration": true,
         "experimentalDecorators": true,
         "noImplicitReturns": true,
-        "pretty": true,
-        "strict": true
+        "strictPropertyInitialization": false,
+        "pretty": true
     }
 }

@@ -1,0 +1,67 @@
+{
+  "deployed": {
+    "rinkeby": {
+      "TestToken": "0xf44cf0b9b8328adf6d899667b2427d13759087f0",
+      "TestDAO": "0x64a07f5472f87d273846f11e0b1d6d69cd2001fa",
+      "Migrations": "0x38dcf18e64a3ed64767919ec6960d71040e35c82",
+      "MerkleProof": "0xcd8f54ed0dcfda2f44064ad279c8c559ff7ff244",
+      "WyvernToken": "0xd1be358dab323802a3c469b0787476fdcb8af5d6",
+      "WyvernDAO": "0x1b4c767502d01deee83af491c946b469e0620e30",
+      "WyvernRegistry": "0xe59640a71231352aa97d3f1b503ad066c799fad9",
+      "SaleKindInterface": "0x726f4782c533c8aa98da9291f586dc37b41b0bb8",
+      "WyvernExchange": "0x5206e78b21ce315ce284fb24cf05e0585a93b1d9",
+      "DirectEscrowProvider": "0x22f617c80e5f4908b943b938e7dc5ab735e64372",
+      "WyvernProxyRegistry": "0xf57b2c51ded3a29e6891aba85459d600256cf317",
+      "TestStatic": "0xc33a203d61c688433e53fcb6f3af7c6aa12192a4",
+      "WyvernDAOProxy": "0x65cb6ea254f716ac9ffdf542994214dabf1c8aa2",
+      "WyvernAtomicizer": "0x613a12b156ffa304f714cc38d6ae5d3df70d8063",
+      "WyvernTokenTransferProxy": "0x82d102457854c985221249f86659c9d6cf12aa72"
+    },
+    "development": {
+      "Migrations": "0xdd019a5ea1fc4965cd7dba3046b4f6711e9230c1",
+      "TestToken": "0x0dd1ef3d178a82c9547f125ca657c8a698b1d506",
+      "TestDAO": "0x91cd9799922be2595335f9761c81f7cb8ce05463",
+      "MerkleProof": "0x27043ca2c9876082e8ccba8669b203569977f622",
+      "WyvernToken": "0xbff6b9bc6ff4886e8573283788b8e33d234595e0",
+      "WyvernDAO": "0x1d82a472cdfa5730004ec0b38ac205fbdd318e5e",
+      "WyvernRegistry": "0xf3d3f091fdc77054f8ef0fcc45edfe9012656da5",
+      "SaleKindInterface": "0x9ba0fd02d538435dae6f6e5e741cd8b981416a51",
+      "WyvernExchange": "0xc3179db5ed2970c6e48e8e6834edce29de38076f",
+      "DirectEscrowProvider": "0x46ffabd33987eef48d59cd315c5450b8eab116be",
+      "WyvernProxyRegistry": "0x1318d277aa12526c08f30bdcb577303d66244cc7",
+      "TestStatic": "0xa9e0e4527c7590b4625fda6ce106467f40ae4568",
+      "WyvernDAOProxy": "0x1b992a4aeeb10a73b8e78e8fcb204b0a35935262",
+      "WyvernAtomicizer": "0xa560595df57d0b9d2ea652d1f1408842c0d0f6d5",
+      "WyvernTokenTransferProxy": "0x99b998118c9f62b299be1de54b794483f5569534"
+    },
+    "main": {
+      "Migrations": "0x62f98f9b03176f3da5a1c20955295084386c4c87",
+      "MerkleProof": "0xcc3bf5a8e925f7b70238eda8dbe51b2a5ea8ae2c",
+      "WyvernToken": "0x056017c55ae7ae32d12aef7c679df83a85ca75ff",
+      "WyvernDAO": "0x17f68886d00845867c154c912b4ccc506ec92fc7",
+      "TestToken": "0x293e49a9a091d166f7d29ad8da39e0c85aa66e4a",
+      "TestDAO": "0x65df732afac6969ab4761778e4f9840df3187587",
+      "TestStatic": "0x38a0f4acbb5efabb44539f960a60376cb6547602",
+      "WyvernProxyRegistry": "0xa5409ec958c83c3f309868babaca7c86dcb077c1",
+      "SaleKindInterface": "0x77a1dada690ab5172d80ae3b7ccaf88ee3c2e607",
+      "WyvernExchange": "0x7be8076f4ea4a4ad08075c2508e481d6c946d12b",
+      "WyvernDAOProxy": "0xa839d4b5a36265795eba6894651a8af3d0ae2e68",
+      "WyvernAtomicizer": "0xc99f70bfd82fb7c8f8191fdfbfb735606b15e5c5",
+      "WyvernTokenTransferProxy": "0xe5c783ee536cf5e63e792988335c4255169be4e1"
+    },
+    "baobab": {
+      "Migrations": "0xc8f0b303e38041afbc0f9756c183101160282adb",
+      "TestToken": "0x394755fdcd1096272646f6ec385d44e0468ed96d",
+      "TestDAO": "0x334731ab7c68b6261a3be9367fbbfd4c292501fc",
+      "TestStatic": "0x4e83e6506761e06759401b8348048fd7e6ea8528",
+      "MerkleProof": "0x6112341a0b6de94c2aa435a1e8c45500795bf290",
+      "WyvernToken": "0xd573c3eb90bc8eaf64f658b547fd82432ab0004c",
+      "WyvernDAO": "0xc808f53a53773d958703a6af67da455b5df53ddd",
+      "WyvernDAOProxy": "0x1ef30a7dbf565a0a0433ea0ac14594cd96866734",
+      "WyvernAtomicizer": "0x22edf4e839770781fb8fda6422346a399d4b9920",
+      "WyvernProxyRegistry": "0xa78f376ed66a880d74d22766ab10db5d63abd747",
+      "WyvernTokenTransferProxy": "0xa72bd639dd339941026c027b825836f9fbaeef93",
+      "WyvernExchange": "0xc4d72068912916ee502906d6873babd946641209"
+    }
+  }
+}

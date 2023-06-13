@@ -167,6 +167,7 @@ contract Exchange is ExchangeCore {
         Order memory order = Order(addrs[0], addrs[1], addrs[2], uints[0], uints[1], uints[2], uints[3], addrs[3], feeMethod, side, saleKind, addrs[4], howToCall, calldata, replacementPattern, addrs[5], staticExtradata, ERC20(addrs[6]), uints[4], uints[5], uints[6], uints[7], uints[8]);
         return validateOrder(
           hashToSign(order),
+          hashToKlaytnSign(order),
           order,
           Sig(v, r, s)
         );
