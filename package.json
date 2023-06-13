@@ -25,6 +25,9 @@
     "url": "https://github.com/ProjectWyvern/wyvern-js/issues"
   },
   "homepage": "https://github.com/ProjectWyvern/wyvern-js#readme",
+  "publishConfig": {
+    "blocks0707:registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "@0xproject/assert": "^0.0.11",
     "@0xproject/json-schemas": "^0.7.3",
