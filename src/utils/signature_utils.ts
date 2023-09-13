@@ -23,7 +23,7 @@ export const signatureUtils = {
             console.log("signerAddress: ", signerAddress);
             return retrievedAddress === signerAddress;
         } catch (err) {
-            console.error("exception occured while isValidSignature: ", err)
+            console.error("exception occurred while isValidSignature: ", err);
             return false;
         }
     },

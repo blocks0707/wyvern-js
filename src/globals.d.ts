@@ -38,7 +38,9 @@ declare module 'ethereumjs-abi' {
 
 // truffle-hdwallet-provider declarations
 declare module 'truffle-hdwallet-provider' {
+  /* tslint:disable */
   import * as Web3 from 'web3';
+  /* tslint:enable */
   class HDWalletProvider implements Web3.Provider {
     constructor(mnemonic: string, rpcUrl: string);
     public sendAsync(
@@ -56,9 +58,11 @@ interface DecodedLog {
   events: DecodedLogArg[];
 }
 declare module 'abi-decoder' {
-    import * as Web3 from 'web3';
-    const addABI: (abi: Web3.AbiDefinition) => void;
-    const decodeLogs: (logs: Web3.LogEntry[]) => DecodedLog[];
+  /* tslint:disable */
+  import * as Web3 from 'web3';
+  /* tslint:enable */
+  const addABI: (abi: Web3.AbiDefinition) => void;
+  const decodeLogs: (logs: Web3.LogEntry[]) => DecodedLog[];
 }
 
 declare module 'web3/lib/solidity/coder' {
