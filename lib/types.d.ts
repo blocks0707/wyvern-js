@@ -19,7 +19,8 @@ export declare enum Network {
     Cypress = "cypress",
     Baobab = "baobab",
     Mumbai = "mumbai",
-    Polygon = "polygon"
+    Polygon = "polygon",
+    Elizabeth = 'elizabeth'
 }
 export declare enum SaleKind {
     FixedPrice = 0,

@@ -121,6 +121,14 @@ export declare const constants: {
             WyvernToken: string;
             WyvernDAO: string;
         };
+        elizabeth: {
+            Migrations: string;
+            WyvernDAOProxy: string;
+            WyvernAtomicizer: string;
+            WyvernProxyRegistry: string;
+            WyvernTokenTransferProxy: string;
+            WyvernExchange: string;
+        };
     };
     ATOMICIZER_ABI: {
         constant: boolean;
