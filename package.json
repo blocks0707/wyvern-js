@@ -1,6 +1,6 @@
 {
   "name": "@blocks0707/wyvern-js",
-  "version": "3.3.5-multiwallet",
+  "version": "3.3.6",
   "description": "Javascript SDK for the Wyvern Protocol",
   "main": "lib/index.js",
   "scripts": {

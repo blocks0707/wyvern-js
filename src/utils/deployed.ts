@@ -86,7 +86,7 @@ export const deployed = {
     WyvernDAO: "0x1b4c767502d01deee83af491c946b469e0620e30",
     WyvernProxyRegistry: "0xe2394c5e76cca8e9ed9e5e9ac388ad6fc4dd3ea3",
     WyvernTokenTransferProxy: "0xa87e9c031d11a6b8de33e273f8f8d09b22008a9f",
-    WyvernExchange: "0x07a356be93170ab40acca42faab6e9b65424dc64"
+    WyvernExchange: "0x07a356be93170ab40acca42faab6e9b65424dc64",
   },
   goerli: {
     WyvernDAOProxy: "0x0ec4b506ea9c6ca9be3b2fa8725af5494ead6418",
@@ -127,5 +127,13 @@ export const deployed = {
     WyvernExchange: "0xc852f9cca485c9aed882d9ced2f24608e01bf69d",
     WyvernToken: "0xd1be358dab323802a3c469b0787476fdcb8af5d6",
     WyvernDAO: "0x1b4c767502d01deee83af491c946b469e0620e30",
+  },
+  elizabeth: {
+    Migrations: "0xfd792954c3627ce9e4c71fe9b056174c4084a18a",
+    WyvernDAOProxy: "0xb373d42d953544ee21859d0fdbbf8cf764ebc28b",
+    WyvernAtomicizer: "0xf43f186e0509c944f767fb2901d691e37a397e6f",
+    WyvernProxyRegistry: "0x8c4a8c9deb74add8a805b2804a21b553d54efbc9",
+    WyvernTokenTransferProxy: "0x7e6ba86166d08551f0102385d66e950c38b91927",
+    WyvernExchange: "0xfd61f31a07f3934bbf8d862fab09dec0bd672538",
   },
 };

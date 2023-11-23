@@ -23,6 +23,7 @@ export enum Network {
     Baobab = 'baobab',
     Mumbai = 'mumbai',
     Polygon = 'polygon',
+    Elizabeth = 'elizabeth',
 }
 
 export enum SaleKind {
