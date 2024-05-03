@@ -72,6 +72,8 @@
       "TestDAO": "0xcd68b813d796c7556b3a1729890a670e1913ae0a",
       "TestStatic": "0x10788b1758439cf9681b00273c8ad34b4f54a6d1",
       "MerkleProof": "0x0f5fe94705cd191806107230e9627b60af8417d2",
+      "WyvernToken": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "WyvernDAO": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
       "WyvernTokenTransferProxy": "0xc852f9cca485c9aed882d9ced2f24608e01bf69d",
       "WyvernExchange": "0xf09e164420d0b85407ceade2411a2a40c4f6e20c"
     },
@@ -88,10 +90,59 @@
       "WyvernToken": "0xd1be358dab323802a3c469b0787476fdcb8af5d6",
       "WyvernDAO": "0x1b4c767502d01deee83af491c946b469e0620e30"
     },
-    "klaytn": {
-      "WyvernProxyRegistry": "0xE2394c5E76ccA8e9ED9e5E9Ac388aD6fc4dD3eA3",
-      "WyvernTokenTransferProxy": "0xA87E9c031D11A6B8dE33e273F8F8d09b22008A9f",
-      "WyvernExchange": "0x07A356be93170Ab40ACcA42FAAB6E9B65424dC64"
+    "mumbai": {
+      "Migrations": "0x682c11ed0c99b24567c191283d79d6c0f2a7f238",
+      "TestToken": "0x80b1629e9a01927e85f97dd58a01656703eb6a4a",
+      "TestDAO": "0xbc5591ab0ea3216633aaf952369e7767ef9c0a38",
+      "TestStatic": "0xe1cd16aa5dd84119939322b7278fe25d8fc1818b",
+      "WyvernDAOProxy": "0x034212dda2e4433ef003ce130bbaf288b1357ec3",
+      "WyvernAtomicizer": "0xdf15410304c4d6b13a1997f73c9645341720a1fd",
+      "WyvernProxyRegistry": "0x86a929c57de8031ffe345cfa82ceb56c92151e1a",
+      "WyvernTokenTransferProxy": "0xf3d99c7fcc04cdfd4c7f8a2778fdd545526d35be",
+      "WyvernExchange": "0x7a9f807bc1d337c9ecef318188e9882f0c01777b",
+      "WyvernToken": "0xd1be358dab323802a3c469b0787476fdcb8af5d6",
+      "WyvernDAO": "0x1b4c767502d01deee83af491c946b469e0620e30"
+    },
+    "polygon": {
+      "Migrations": "0x9b2537e6133d9ce721a6bbc7ebe80422b5fe0783",
+      "TestToken": "0x0b8813a9543065d093facfe135e8716d23c95373",
+      "TestDAO": "0xcd68b813d796c7556b3a1729890a670e1913ae0a",
+      "TestStatic": "0x10788b1758439cf9681b00273c8ad34b4f54a6d1",
+      "WyvernDAOProxy": "0x987df8f5d774835b7bd2c7ede848114fcd560d44",
+      "WyvernAtomicizer": "0x0ec4b506ea9c6ca9be3b2fa8725af5494ead6418",
+      "WyvernProxyRegistry": "0x8fb34472a0200954f7fe017b7ac4cac6fc6d4661",
+      "WyvernTokenTransferProxy": "0xc28a17c10c84bc93eb1a5bccb6ef21ce2fcfdca3",
+      "WyvernExchange": "0xc852f9cca485c9aed882d9ced2f24608e01bf69d",
+      "WyvernToken": "0xd1be358dab323802a3c469b0787476fdcb8af5d6",
+      "WyvernDAO": "0x1b4c767502d01deee83af491c946b469e0620e30"
+    },
+    "sepolia": {
+      "Migrations": "0xDAD36F5c98D55f88E4153eB23855AF3bA95674c9",
+      "WyvernDAOProxy": "0x1b6b34232C4Cc92825f3aEB5008b2FB1b5b2c081",
+      "WyvernAtomicizer": "0x654D469Ae2F8DE27220c02d44311A217ebE074D6",
+      "TestToken": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "TestDAO": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "TestStatic": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "MerkleProof": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "WyvernToken": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "WyvernDAO": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "WyvernProxyRegistry": "0x824b8f5ad82ACDc33B1B668558d5E073291b6170",
+      "WyvernTokenTransferProxy": "0x4207254A0aCe6D2C74DE1D5faA8e5268Ff1502a3",
+      "WyvernExchange": "0x75FA3411CCc20c0e9D9cf47f885f11Ab51109525"
+    },
+    "amoy": {
+      "Migrations": "0x75dEa9541dA434BBc2983cCa6647352A9180B547",
+      "TestToken": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "TestDAO": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "TestStatic": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "MerkleProof": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "WyvernToken": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "WyvernDAO": "0xFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+      "WyvernDAOProxy": "0x7772934873CF820852860c305796bB5867b59000",
+      "WyvernAtomicizer": "0xC9E8b02C91897293180863ad5fb4e4701362638b",
+      "WyvernProxyRegistry": "0x60b0f6695DBAfc20486833d962a32bF98113Db95",
+      "WyvernTokenTransferProxy": "0xC24683E7350b0Bd7e042F65EAAafc437614EB5Ee",
+      "WyvernExchange": "0xBEA5BC47270AECf84e2FC96a65E2e067fa6f2CfD"
     }
   }
 }

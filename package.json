@@ -1,6 +1,6 @@
 {
   "name": "@blocks0707/wyvern-js",
-  "version": "3.3.5-multiwallet",
+  "version": "3.3.5-evmTestnets",
   "description": "Javascript SDK for the Wyvern Protocol",
   "main": "lib/index.js",
   "scripts": {
@@ -67,5 +67,8 @@
     "typescript-eslint-parser": "^16.0.0",
     "web3-typescript-typings": "^0.9.3",
     "webpack": "^3.10.0"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }

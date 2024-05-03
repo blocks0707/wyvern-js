@@ -1,6 +1,6 @@
-import { TransactionReceipt } from '@0xproject/types';
-import { BigNumber } from '@0xproject/utils';
-import * as Web3 from 'web3';
+import { TransactionReceipt } from "@0xproject/types";
+import { BigNumber } from "@0xproject/utils";
+import * as Web3 from "web3";
 export interface WyvernProtocolConfig {
     network: Network;
     gasPrice?: BigNumber;
@@ -19,7 +19,9 @@ export declare enum Network {
     Cypress = "cypress",
     Baobab = "baobab",
     Mumbai = "mumbai",
-    Polygon = "polygon"
+    Polygon = "polygon",
+    Sepolia = "sepolia",
+    Amoy = "amoy"
 }
 export declare enum SaleKind {
     FixedPrice = 0,

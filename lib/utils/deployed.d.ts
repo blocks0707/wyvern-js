@@ -114,4 +114,32 @@ export declare const deployed: {
         WyvernToken: string;
         WyvernDAO: string;
     };
+    sepolia: {
+        Migrations: string;
+        WyvernDAOProxy: string;
+        WyvernAtomicizer: string;
+        TestToken: string;
+        TestDAO: string;
+        TestStatic: string;
+        MerkleProof: string;
+        WyvernToken: string;
+        WyvernDAO: string;
+        WyvernProxyRegistry: string;
+        WyvernTokenTransferProxy: string;
+        WyvernExchange: string;
+    };
+    amoy: {
+        Migrations: string;
+        TestToken: string;
+        TestDAO: string;
+        TestStatic: string;
+        MerkleProof: string;
+        WyvernToken: string;
+        WyvernDAO: string;
+        WyvernDAOProxy: string;
+        WyvernAtomicizer: string;
+        WyvernProxyRegistry: string;
+        WyvernTokenTransferProxy: string;
+        WyvernExchange: string;
+    };
 };
